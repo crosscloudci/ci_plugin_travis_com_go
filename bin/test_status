@@ -1,0 +1,2 @@
+#!/bin/bash
+(( "$RANDOM" % 2 )) && ( echo "success" ; exit 0 ) || ( echo "fail" ; exit 1 )
