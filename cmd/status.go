@@ -129,7 +129,7 @@ var statusCmd = &cobra.Command{
 				os.Exit(1)
 			}
 
-			url_prefix := fmt.Sprintf("https://travis-ci.org/%s/builds", viper.GetString("project"))
+			url_prefix := fmt.Sprintf("https://travis-ci.com/%s/builds", viper.GetString("project"))
 			cli_response.BuildUrl = strings.Replace(returned_build_url, "/build", url_prefix, 1)
 			cli_response.BuildStatus = returned_build_status
 
